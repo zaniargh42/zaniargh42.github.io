@@ -1,511 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-    <title>Reflux HTML CSS Template</title>
-<!--
-Reflux Template
-https://templatemo.com/tm-531-reflux
--->
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>SOME<br>NAME</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css" />
-    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
-    <link rel="stylesheet" href="assets/css/owl.css" />
-    <link rel="stylesheet" href="assets/css/lightbox.css" />
-  </head>
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">SOME NAME</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
 
-  <body>
-    <div id="page-wraper">
-      <!-- Sidebar Menu -->
-      <div class="responsive-nav">
-        <i class="fa fa-bars" id="menu-toggle"></i>
-        <div id="menu" class="menu">
-          <i class="fa fa-times" id="menu-close"></i>
-          <div class="container">
-            <div class="image">
-              <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a>
-            </div>
-            <div class="author-content">
-              <h4>Reflux Me</h4>
-              <span>Web Designer</span>
-            </div>
-            <nav class="main-nav" role="navigation">
-              <ul class="main-menu">
-                <li><a href="#section1">About Me</a></li>
-                <li><a href="#section2">What I’m good at</a></li>
-                <li><a href="#section3">My Work</a></li>
-                <li><a href="#section4">Contact Me</a></li>
-              </ul>
-            </nav>
-            <div class="social-network">
-              <ul class="soial-icons">
-                <li>
-                  <a href="https://fb.com/templatemo"
-                    ><i class="fa fa-facebook"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-linkedin"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-dribbble"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-rss"></i></a>
-                </li>
-              </ul>
-            </div>
-            <div class="copyright-text">
-              <p>Copyright 2019 Reflux Design</p>
-            </div>
-          </div>
-        </div>
-      </div>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-      <section class="section about-me" data-section="section1">
-        <div class="container">
-          <div class="section-heading">
-            <h2>About Me</h2>
-            <div class="line-dec"></div>
-            <span
-              >This is a Bootstrap v4.2.1 CSS Template for you. Edit and use
-              this layout for your site. Updated on 21 May 2019 for repeated main menu HTML code.</span
-            >
-          </div>
-          <div class="left-image-post">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-image">
-                  <img src="assets/images/left-image.jpg" alt="" />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right-text">
-                  <h4>Reflux HTML CSS Template</h4>
-                  <p>
-                    Donec tristique feugiat lacus, at sollicitudin nunc euismod
-                    sed. Mauris viverra, erat non sagittis gravida, elit dui
-                    mollis ante, sit amet eleifend purus ligula eget eros. Sed
-                    tincidunt quam vitae neque pharetra dignissim eget ut
-                    libero.
-                  </p>
-                  <div class="white-button">
-                    <a href="#">Read More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="right-image-post">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-text">
-                  <h4>Sed sagittis rhoncus velit</h4>
-                  <p>
-                    Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada fames ac turpis egestas. Vestibulum fermentum
-                    eleifend nibh, vitae sodales elit finibus pretium.
-                    Suspendisse potenti. Ut sollicitudin risus a sollicitudin
-                    semper.
-                  </p>
-                  <div class="white-button">
-                    <a href="#">Read More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right-image">
-                  <img src="assets/images/right-image.jpg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
 
-      <section class="section my-services" data-section="section2">
-        <div class="container">
-          <div class="section-heading">
-            <h2>What I’m good at?</h2>
-            <div class="line-dec"></div>
-            <span
-              >Curabitur leo felis, rutrum vitae varius eu, malesuada a tortor.
-              Vestibulum congue leo et tellus aliquam, eu viverra nulla semper.
-              Nullam eu faucibus diam. Donec eget massa ante.</span
-            >
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="first-service-icon service-icon"></div>
-                <h4>HTML5 &amp; CSS3</h4>
-                <p>
-                  Phasellus non convallis dolor. Integer tempor hendrerit arcu
-                  at bibendum. Sed ac ante non metus vehicula congue quis eget
-                  eros.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="second-service-icon service-icon"></div>
-                <h4>Creative Ideas</h4>
-                <p>
-                  Proin lacus massa, eleifend sed fermentum in, dignissim vel
-                  metus. Nunc accumsan leo nec felis porttitor, ultricies
-                  faucibus purus mollis.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="third-service-icon service-icon"></div>
-                <h4>Easy Customize</h4>
-                <p>
-                  Integer suscipit condimentum aliquet. Nam quis risus metus.
-                  Nullam faucibus quam eget arcu pretium tincidunt. Nam libero
-                  dui.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="fourth-service-icon service-icon"></div>
-                <h4>Admin Dashboard</h4>
-                <p>
-                  Vivamus et dui a massa venenatis fringilla. Proin lacus massa,
-                  eleifend sed fermentum in, dignissim vel metus. Nunc accumsan
-                  leo nec felis porttitor.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section my-work" data-section="section3">
-        <div class="container">
-          <div class="section-heading">
-            <h2>My Work</h2>
-            <div class="line-dec"></div>
-            <span
-              >Aenean sollicitudin ex mauris, lobortis lobortis diam euismod sit
-              amet. Duis ac elit vulputate, lobortis arcu quis, vehicula
-              mauris.</span
-            >
-          </div>
-          <div class="row">
-            <div class="isotope-wrapper">
-              <form class="isotope-toolbar">
-                <label
-                  ><input
-                    type="radio"
-                    data-type="*"
-                    checked=""
-                    name="isotope-filter"
-                  />
-                  <span>all</span></label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    data-type="people"
-                    name="isotope-filter"
-                  />
-                  <span>people</span></label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    data-type="nature"
-                    name="isotope-filter"
-                  />
-                  <span>nature</span></label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    data-type="animals"
-                    name="isotope-filter"
-                  />
-                  <span>animals</span></label
-                >
-              </form>
-              <div class="isotope-box">
-                <div class="isotope-item" data-type="nature">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-01.jpg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/portfolio-01.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                      <h4>First Title</h4>
-                      <span>free to use our template</span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="people">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-02.jpg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/portfolio-02.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                      <h4>Second Title</h4>
-                      <span>please tell your friends</span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="animals">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-03.jpg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/portfolio-03.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                      <h4>Item Third</h4>
-                      <span>customize anything</span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="people">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-04.jpg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/portfolio-04.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                      <h4>Item Fourth</h4>
-                      <span>Re-distribution not allowed</span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="nature">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-05.jpg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/portfolio-05.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                      <h4>Fifth Awesome</h4>
-                      <span>Ut sollicitudin risus</span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="animals">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/portfolio-06.jpg"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/portfolio-06.jpg"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                      <h4>Awesome Sixth</h4>
-                      <span>Donec eget massa ante</span>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section contact-me" data-section="section4">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Contact Me</h2>
-            <div class="line-dec"></div>
-            <span
-              >Fusce eget nibh nec justo interdum condimentum. Morbi justo ex,
-              efficitur at ante ac, tincidunt maximus ligula. Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit.</span
-            >
-          </div>
-          <div class="row">
-            <div class="right-content">
-              <div class="container">
-                <form id="contact" action="" method="post">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input
-                          name="name"
-                          type="text"
-                          class="form-control"
-                          id="name"
-                          placeholder="Your name..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input
-                          name="email"
-                          type="text"
-                          class="form-control"
-                          id="email"
-                          placeholder="Your email..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <input
-                          name="subject"
-                          type="text"
-                          class="form-control"
-                          id="subject"
-                          placeholder="Subject..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <textarea
-                          name="message"
-                          rows="6"
-                          class="form-control"
-                          id="message"
-                          placeholder="Your message..."
-                          required=""
-                        ></textarea>
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <button type="submit" id="form-submit" class="button">
-                          Send Message
-                        </button>
-                      </fieldset>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+      <img src="/w3images/girl_mountain.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+      <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
     </div>
 
-    <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <div class="w3-third">
+      <img src="/w3images/boy.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+      <img src="/w3images/man_bench.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+      <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+    </div>
+    
+    <div class="w3-third">
+      <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+      <img src="/w3images/girl_train.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+      <img src="/w3images/closegirl.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
+    </div>
+  </div>
 
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script>
-      //according to loftblog tut
-      $(".main-menu li:first").addClass("active");
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
 
-      var showSection = function showSection(section, isAnimate) {
-        var direction = section.replace(/#/, ""),
-          reqSection = $(".section").filter(
-            '[data-section="' + direction + '"]'
-          ),
-          reqSectionPos = reqSection.offset().top - 0;
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>About Me</b></h4>
+    <img src="/w3images/avatar_hat.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>My Name</h4>
+      <p>Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <p>mail: example@example.com</p>
+      <p>tel: 5353 35531</p>
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16">Technical Skills</h4>
+      <p class="w3-wide">Photography</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>
+      </div>
+      <p class="w3-wide">Web Design</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide">Photoshop</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+      </div>
+      <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Download Resume</button></p>
+      <hr class="w3-opacity">
 
-        if (isAnimate) {
-          $("body, html").animate(
-            {
-              scrollTop: reqSectionPos
-            },
-            800
-          );
-        } else {
-          $("body, html").scrollTop(reqSectionPos);
-        }
-      };
+      <h4 class="w3-padding-16">How much I charge</h4>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+            <li class="w3-padding-16">Web Design</li>
+            <li class="w3-padding-16">Photography</li>
+            <li class="w3-padding-16">5GB Storage</li>
+            <li class="w3-padding-16">Mail Support</li>
+            <li class="w3-padding-16">
+              <h2>$ 10</h2>
+              <span class="w3-opacity">per month</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="w3-half">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
+            <li class="w3-padding-16">Web Design</li>
+            <li class="w3-padding-16">Photography</li>
+            <li class="w3-padding-16">50GB Storage</li>
+            <li class="w3-padding-16">Endless Support</li>
+            <li class="w3-padding-16">
+              <h2>$ 25</h2>
+              <span class="w3-opacity">per month</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
-      var checkSection = function checkSection() {
-        $(".section").each(function() {
-          var $this = $(this),
-            topEdge = $this.offset().top - 80,
-            bottomEdge = topEdge + $this.height(),
-            wScroll = $(window).scrollTop();
-          if (topEdge < wScroll && bottomEdge > wScroll) {
-            var currentId = $this.data("section"),
-              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-            reqLink
-              .closest("li")
-              .addClass("active")
-              .siblings()
-              .removeClass("active");
-          }
-        });
-      };
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>Contact Me</b></h4>
+      <p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting new people!</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+      </form>
+    </div>
+  </div>
 
-      $(".main-menu").on("click", "a", function(e) {
-        e.preventDefault();
-        showSection($(this).attr("href"), true);
-      });
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>INFO</h3>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>      
+      </div>
+    
+      <div class="w3-third">
+        <h3>BLOG POSTS</h3>
+        <ul class="w3-ul">
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Lorem</span><br>
+            <span>Sed mattis nunc</span>
+          </li>
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Ipsum</span><br>
+            <span>Praes tinci sed</span>
+          </li> 
+        </ul>
+      </div>
 
-      $(window).scroll(function() {
-        checkSection();
-      });
-    </script>
-  </body>
+      <div class="w3-third">
+        <h3>POPULAR TAGS</h3>
+        <p>
+          <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DIY</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
 </html>
